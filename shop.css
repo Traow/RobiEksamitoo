@@ -1,0 +1,529 @@
+@font-face {
+    font-family: 'CustomFont'; /* Font family name */
+    src: url('fonts/CaviarDreams.ttf') format('woff2'), /* Path to font file */
+        url('fonts/CaviarDreamsBold.ttf') format('woff2'), /* Path to font file */
+}
+
+/* Apply custom font to specific elements */
+body, p {
+    font-family: 'CustomFont', Arial, sans-serif; /* Use custom font with fallback */
+}
+
+h1, h2, h3 {
+    font-family: 'CustomFont', Arial, sans-serif; /* Apply custom font to headings */
+}
+
+
+
+body {
+    background-image: url('Photos/background.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.navbar {
+    background-color: #27272a;
+    color: white;
+    padding: 0.8rem 1rem; /* Reduce horizontal padding */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 3rem; /* Adjust the distance from the top */
+    width: 60%; /* Adjust the width as needed */
+    left: 50%; /* Move the navbar to the center horizontally */
+    transform: translateX(-50%); /* Center the navbar */
+    z-index: 2; /* Ensure navbar is above hero section */
+    border: 4px solid #42a8cd; /* Add border */
+    border-radius: 10px; /* Add border radius */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add box shadow */
+}
+
+.navbar-logo {
+    position: relative; /* Set position relative */
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center vertically */
+}
+
+.navbar-logo-img {
+    max-width: 150px; /* Set maximum width for the logo */
+    height: auto;
+    position: absolute; /* Set position absolute */
+    top: 50%; /* Position the logo vertically in the middle */
+    left: 50%; /* Position the logo horizontally in the middle */
+    transform: translate(-100%, -50%); /* Adjust both vertical and horizontal positioning */
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.navbar-link {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar-link:hover {
+    color: #68C5F1;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 0.5rem;
+}
+
+.navbar-controls {
+    display: flex;
+    gap: 1rem;
+}
+
+.navbar-button {
+    background-color: #68C5F1;
+    color: black;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+.navbar-icon {
+    max-width: 25px;
+    height: auto;
+}
+
+.navbar-icon-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-container {
+    text-align: center;
+    margin-bottom: 20px; /* Adjust as needed */
+    margin-top: 10%;
+    margin-left: -55%;
+    opacity: 0.5;
+    z-index: 1; /* Ensure the dropdown is above other elements */
+    transition: opacity 0.3s ease; /* Add a transition effect */
+}
+
+.dropdown-container:hover {
+    opacity: 1; /* Change opacity to 1 on hover */
+}
+
+
+/* Dropdown button */
+.dropbtn {
+    background-color: #3498db;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #2980b9;
+}
+
+/* Dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Links inside the dropdown on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on focus */
+.dropdown:focus-within .dropdown-content {
+    display: block;
+}
+
+/* Style the dropdown button with a downward arrow */
+.dropbtn:after {
+    content: "";
+    border: 6px solid transparent;
+    border-top: 6px solid #fff;
+    position: absolute;
+    top: 65%;
+    right: 8px;
+}
+
+
+.details {
+    margin-top: 10%;
+    margin-left: 20%;
+    margin-bottom: 20px;
+}
+
+
+.select-container {
+    margin-top: 20px;
+}
+
+label {
+    margin-right: 10px;
+}
+
+select {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ffffff;
+    color: black;
+    opacity: 0.5;
+    transition: opacity 0.5s ease; /* Removed the comma and corrected the property name */
+}
+
+select:hover {
+    opacity: 1;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 0.2fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0%;
+    margin-bottom: 10%;
+}
+
+.item {
+    background-color: #fff;
+    padding: 20px; /* Increase padding to make the items bigger */
+    border-radius: 16px; /* Increase border-radius to make the items rounder */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Increase box-shadow to make the items more prominent */
+    opacity: 0.5;
+    transition: opacity 0.5s ease, transform 0.5s ease, margin 0.5s ease;
+}
+
+.item:hover {
+    transform: scale(1.1); /* Increase the scale on hover to make the items bigger */
+    opacity: 1;
+}
+  
+  
+.item img {
+    width: 100%; /* Set the desired width */
+    height: 500px; /* Set the desired height */
+    object-fit: cover; /* Maintain aspect ratio and crop if necessary */
+}
+  
+  .item h3 {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  
+  .item p {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  .open-button {
+    background-color: #555;
+    color: white;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: relative;
+    margin-top: -40px;
+    margin-left: 360px;
+    width: 100px;
+  }
+  
+  /* The popup form - hidden by default */
+  .form-popup {
+    display: block;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%; /* Increase the width */
+    max-width: 600px; /* Increase the maximum width */
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    overflow: auto;
+    padding: 20px; /* Add padding */
+}
+
+.form-container {
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px; /* Add border radius for better appearance */
+}
+
+.popup-image {
+    width: 100%;
+    height: auto;
+    max-width: 200px; /* Set the maximum width */
+    display: block;
+    margin: 0 auto 20px; /* Center the image and add some bottom margin */
+}
+
+/* Adjust the button styles for better appearance */
+.form-container .btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+    border-radius: 5px; /* Add border radius for buttons */
+}
+
+.form-container .btn.cancel {
+    background-color: red;
+}
+
+.form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+}
+
+
+.footer {
+    background-color: #27272a;
+    color: #ffffff;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .footer-content {
+    max-width: 80rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .footer-company {
+    margin-bottom: 1rem;
+  }
+  
+  .footer-links {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  /* Typography */
+  .footer-title {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: bold;
+    margin-left: 12%;
+  }
+  
+  .footer-address {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+  
+  .footer-link {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+  
+  /* Hover effect */
+  .footer-link:hover {
+    text-decoration: underline;
+  }
+
+.social-icons img {
+    width: 20px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.social-icons a {
+    margin-right: 16px;
+}
+
+  @media screen and (max-width: 375px) {
+
+
+    .navbar {
+        background-color: #27272a;
+        color: white;
+        padding: 0.8rem 1rem; /* Reduce horizontal padding */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%; /* Set navbar to full width */
+        border: 4px solid #42a8cd; /* Add border */
+        border-radius: 10px; /* Add border radius */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add box shadow */
+        margin-top: -50px;
+    }
+    
+    .navbar-logo {
+        position: relative; /* Set position relative */
+        display: flex; /* Use flexbox for alignment */
+        align-items: center; /* Center vertically */
+    }
+    
+    .navbar-logo-img {
+        max-width: 100px; /* Set maximum width for the logo */
+        height: auto;
+        position: absolute; /* Set position absolute */
+        top: 50%; /* Position the logo vertically in the middle */
+        transform: translate(-300%, -50%); /* Adjust both vertical and horizontal positioning */
+    }
+    
+    
+    .navbar-menu {
+        list-style: none;
+        display: flex;
+        gap: 0.6rem;
+        margin-left: 90px;
+    }
+    
+    .navbar-link {
+        color: white;
+        text-decoration: none;
+    }
+    
+    .navbar-link:hover {
+        color: #68C5F1;
+    }
+    
+    .navbar-brand {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-left: 0.5rem;
+    }
+    
+    .navbar-controls {
+        display: flex;
+        gap: 1rem;
+    }
+    
+    .navbar-button {
+        background-color: #68C5F1;
+        color: black;
+        padding: 0.5rem 1rem;
+        border-radius: 0.25rem;
+        cursor: pointer;
+    }
+    
+    .navbar-icon {
+        display: none;
+    }
+    
+    .navbar-icon-button {
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+
+    .dropbtn {
+        background-color: #3498db;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        margin-top: 80%;
+    }
+    
+    label {
+        font-size: 0.8rem; /* Decrease font size for smaller screens */
+    }
+
+    select {
+        font-size: 0.8rem; /* Decrease font size for smaller screens */
+        margin-top: 30%;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr; /* Set a single column layout for mobile */
+        gap: 10px; /* Decrease the gap between items for better spacing */
+        justify-content: center;
+        align-items: center;
+        margin-top: 5%; /* Decrease the top margin */
+        margin-bottom: 5%; /* Decrease the bottom margin */
+    }
+
+    .item {
+        padding: 10px; /* Decrease padding to make items smaller */
+        border-radius: 10px; /* Decrease border-radius */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Decrease box-shadow */
+        opacity: 0.7; /* Adjust opacity */
+        transition: opacity 0.5s ease, transform 0.5s ease; /* Keep transition effects */
+        width: 90%; /* Set item width to 90% of container */
+        max-width: 300px; /* Limit max width for smaller screens */
+        margin: 0 auto 20px; /* Center items horizontally and add bottom margin */
+    }
+
+    .item:hover {
+        transform: scale(1.05); /* Adjust hover scale */
+        opacity: 1; /* Adjust hover opacity */
+    }
+
+    .item img {
+        width: 100%; /* Set image width to fill container */
+        height: auto; /* Allow height to adjust proportionally */
+        max-width: 100%; /* Ensure image does not overflow container */
+        border-radius: 10px; /* Adjust border radius for images */
+    }
+
+    .item h3 {
+        font-size: 0.9rem; /* Decrease font size for smaller screens */
+        margin-top: 8px; /* Adjust top margin */
+    }
+
+    .item p {
+        font-size: 0.8rem; /* Decrease font size for smaller screens */
+        color: #666; /* Keep text color */
+    }
+
+    .open-button {
+        background-color: #555;
+        color: white;
+        border: none;
+        cursor: pointer;
+        opacity: 0.8;
+        width: 100%; /* Set button width to fill its container */
+        padding: 10px; /* Adjust button padding */
+        margin-top: 10px; /* Adjust top margin */
+        border-radius: 5px; /* Add border radius for better appearance */
+        position: static; /* Reset position to default */
+    }
+}
+
+    

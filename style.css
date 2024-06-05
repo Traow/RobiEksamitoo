@@ -1,0 +1,834 @@
+@font-face {
+    font-family: 'CustomFont'; /* Font family name */
+    src: url('fonts/CaviarDreams.ttf') format('woff2'), /* Path to font file */
+        url('fonts/CaviarDreamsBold.ttf') format('woff2'), /* Path to font file */
+}
+
+/* Apply custom font to specific elements */
+body, p, a {
+    font-family: 'CustomFont', Arial, sans-serif; /* Use custom font with fallback */
+}
+
+h1, h2, h3 {
+    font-family: 'CustomFont', Arial, sans-serif; /* Apply custom font to headings */
+}
+
+
+
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar Styles */
+/* Navbar Styles */
+/* Navbar Styles */
+/* Navbar Styles */
+.navbar {
+    background-color: #27272a;
+    color: white;
+    padding: 0.8rem 1rem; /* Reduce horizontal padding */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 3rem; /* Adjust the distance from the top */
+    width: 60%; /* Adjust the width as needed */
+    left: 50%; /* Move the navbar to the center horizontally */
+    transform: translateX(-50%); /* Center the navbar */
+    z-index: 2; /* Ensure navbar is above hero section */
+    border: 4px solid #42a8cd; /* Add border */
+    border-radius: 10px; /* Add border radius */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add box shadow */
+}
+
+.navbar-logo {
+    position: relative; /* Set position relative */
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center vertically */
+}
+
+.navbar-logo-img {
+    max-width: 150px; /* Set maximum width for the logo */
+    height: auto;
+    position: absolute; /* Set position absolute */
+    top: 50%; /* Position the logo vertically in the middle */
+    left: 50%; /* Position the logo horizontally in the middle */
+    transform: translate(-100%, -50%); /* Adjust both vertical and horizontal positioning */
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    font-family: caviardreams;
+}
+
+.navbar-link {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar-link:hover {
+    color: #68C5F1;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 0.5rem;
+}
+
+.navbar-controls {
+    display: flex;
+    gap: 1rem;
+}
+
+.navbar-button {
+    background-color: #68C5F1;
+    color: black;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+.navbar-icon {
+    max-width: 25px;
+    height: auto;
+}
+
+.navbar-icon-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+
+  
+
+.container {
+    color: white;
+    background-color: #1c1c1c;
+}
+
+
+  
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    text-align: center;
+    color: white;
+    margin-top: -20%; /* Adjust the percentage as needed */
+}
+
+
+/* Services Section */
+.services {
+    background-color: #2c2c2c;
+    padding: 32px 0;
+    display: flex;
+    justify-content: center; /* Center the items horizontally */
+    text-align: center;
+}
+
+.service {
+    margin: 0 1px; /* Adjust the horizontal margin */
+    flex-basis: calc(25% - 350px); /* Adjust the width of each service */
+}
+
+.service-icon {
+    margin: 0 auto 8px;
+}
+
+.service-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+/* Info Section */
+.info {
+    background-color: white;
+    color: black;
+    padding: 32px 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 0;
+}
+
+.standings, .events {
+    flex: 1;
+    margin: 0 16px;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.standings-table {
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+.standings-table th, .standings-table td {
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+
+body {
+    background-color: #ffffff;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.vahe img {
+    width: 100%; /* Adjust this value as needed */
+    height: auto; /* Maintain aspect ratio */ /* Ensure the image does not exceed the container */
+    display: block; /* Remove bottom spacing */
+}
+
+.vahe {
+    width: 100%; /* Adjust this value as needed */
+    height: 500px; /* Adjust this value as needed */
+    overflow: hidden; /* Hide overflow if the image exceeds the container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -20px;
+}
+
+.match-widget {
+    padding: 24px;
+    width: 50%;
+    margin: auto;
+}
+
+
+
+
+.title-main {
+    font-size: 1.875rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 32px;
+    color: #292c30;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+.button {
+    background-color: #2424a1;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 0.375rem 0.375rem 0 0;
+    border: none;
+    cursor: pointer;
+    margin: 0 4px;
+}
+
+.button.active {
+    background-color: #68C5F1;
+}
+
+.matches-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.match-card {
+    background-color: #ffffff;
+    padding: 16px;
+    border-radius: 0.375rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+}
+
+.match-info {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.tag {
+    background-color: #292c30;
+    padding: 4px 8px;
+    border-radius: 0.375rem;
+}
+
+.match-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #292c30;
+}
+
+.match-date {
+    color: #292c30;
+}
+
+.match-teams {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.team {
+    text-align: center;
+    color: #292c30;
+}
+
+.team-logo {
+    display: block;
+    margin-bottom: 8px;
+    width: 50px;
+    height: 50px;
+}
+
+
+.vs {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #292c30;
+}
+
+.vs.red {
+    color: #68C5F1;
+}
+
+/* Principles Section */
+.principles {
+    background-color: #f5f5f5;
+    color: black;
+    padding: 32px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.principles-content {
+    flex: 1;
+    margin-right: 16px;
+}
+
+.principles-list {
+    list-style: disc;
+    padding-left: 16px;
+}
+
+.btn {
+    background-color: #68C5F1;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 16px;
+}
+
+.image-rounded {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Excellence Section */
+.excellence {
+    background-color: #e0e0e0;
+    color: black;
+    padding: 32px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.excellence-content {
+    flex: 1;
+    margin-left: 16px;
+}
+
+.players-widget-container {
+    display: flex;
+    justify-content: center;
+    gap: 1.3rem;
+    padding: 1rem;
+    background-color: white;
+    color: white;
+    margin-top: -5px;
+}
+
+.player-card {
+    position: relative;
+    background-color: #3a3a3a;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.player-card-small {
+    width: 25%;
+}
+
+.player-card-medium {
+    width: 33.333%;
+    transform: scale(1.05);
+}
+
+.player-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.player-rating {
+    position: absolute;
+    background-color: #68C5F1;
+    color: white;
+    padding: 1rem 1.5rem;
+    border-radius: 3rem;
+    font-size: 3rem;
+}
+
+.player-rating {
+    top: 0.5rem;
+    right: 0.5rem;
+}
+
+.player-duration {
+    top: 0.5rem;
+    left: 0.5rem;
+}
+
+.player-gradient-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, black, transparent);
+    padding: 1rem;
+    text-align: center;
+}
+
+.player-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.player-category {
+    font-size: 1rem;
+}
+
+.player-description {
+    font-size: 0.875rem;
+}
+
+.player-details-button {
+    margin-top: 0.5rem;
+    background-color: #ffffff2c;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+.player-details-button :active {
+    height: 100px;
+}
+
+
+
+.arrow-button-container-left, .arrow-button-container-right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.arrow-button-container-left {
+    left: 0.5rem;
+}
+
+.arrow-button-container-right {
+    right: 0.5rem;
+}
+
+.event-container {
+    background-color: #68C5F1;
+    padding: 8px;
+    margin-top: 20px;
+  }
+  
+  .event-title {
+    font-size: 40px;
+    font-family: draco;
+    font-weight: bold;
+    margin-bottom: 35px;
+    text-align: center; /* Add this line to center the text */
+  }
+  
+  .event-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  @media (min-width: 768px) {
+    .event-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  .event-card {
+    position: relative;
+  }
+  
+  .event-image {
+    width: 100%;
+    height: auto;
+    max-width: 685px;
+    margin-top: -10px;
+  }
+  
+  .event-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff00;
+    color: rgb(0, 0, 0);
+    padding: 1px;
+    width: 100%;
+  }
+  
+  .event-dates {
+    font-size: 12px;
+  }
+  
+  .event-name {
+    font-size: 24px;
+    font-weight: bold;
+  }
+/* Schedule Section */
+.schedule {
+    background-color: #68C5F1;
+    color: black;
+    padding: 32px 0;
+}
+
+.schedule-item {
+    background-color: white;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px #68C5F1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.schedule-day {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.btn-icon {
+    background: none;
+    border: none;
+    color: #68C5F1;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Footer Section */
+.footer {
+    background-color: #27272a;
+    color: #ffffff;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .footer-content {
+    max-width: 80rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .footer-company {
+    margin-bottom: 1rem;
+  }
+  
+  .footer-links {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  /* Typography */
+  .footer-title {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: bold;
+    margin-left: 12%;
+  }
+  
+  .footer-address {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+  
+  .footer-link {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+  
+  /* Hover effect */
+  .footer-link:hover {
+    text-decoration: underline;
+  }
+
+.social-icons img {
+    width: 20px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.social-icons a {
+    margin-right: 16px;
+}
+
+.widget img {
+    width: 100%; /* Let the width adjust automatically */
+    height: auto; /* Set the desired height */
+    object-fit: cover; /* Ensure the image covers the entire container */
+    margin-top: -300px;
+}
+
+
+
+
+/* Media Query for Mobile Devices */
+@media screen and (max-width: 375px) {
+
+
+    .widget img {
+        width: 100%; /* Let the width adjust automatically */
+        height: auto; /* Set the desired height */
+        object-fit: cover; /* Ensure the image covers the entire container */
+        margin-top: 80px;
+    }
+    .navbar {
+        background-color: #27272a;
+        color: white;
+        padding: 0.8rem 1rem; /* Reduce horizontal padding */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%; /* Set navbar to full width */
+        border: 4px solid #42a8cd; /* Add border */
+        border-radius: 10px; /* Add border radius */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add box shadow */
+        margin-top: -50px;
+    }
+    
+    .navbar-logo {
+        position: relative; /* Set position relative */
+        display: flex; /* Use flexbox for alignment */
+        align-items: center; /* Center vertically */
+    }
+    
+    .navbar-logo-img {
+        max-width: 100px; /* Set maximum width for the logo */
+        height: auto;
+        position: absolute; /* Set position absolute */
+        top: 50%; /* Position the logo vertically in the middle */
+        transform: translate(-300%, -50%); /* Adjust both vertical and horizontal positioning */
+    }
+    
+    
+    .navbar-menu {
+        list-style: none;
+        display: flex;
+        gap: 0.6rem;
+        margin-left: 90px;
+    }
+    
+    .navbar-link {
+        color: white;
+        text-decoration: none;
+    }
+    
+    .navbar-link:hover {
+        color: #68C5F1;
+    }
+    
+    .navbar-brand {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-left: 0.5rem;
+    }
+    
+    .navbar-controls {
+        display: flex;
+        gap: 1rem;
+    }
+    
+    .navbar-button {
+        background-color: #68C5F1;
+        color: black;
+        padding: 0.5rem 1rem;
+        border-radius: 0.25rem;
+        cursor: pointer;
+    }
+    
+    .navbar-icon {
+        display: none;
+    }
+    
+    .navbar-icon-button {
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    .players-widget-container {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        padding: 0.5rem; /* Adjust padding */
+        background-color: white;
+        color: black; /* Change text color for better visibility */
+        margin-top: -5px;
+    }
+    
+    .player-rating {
+        position: absolute;
+        background-color: #68C5F1;
+        color: white;
+        padding: 0.1rem 0.8rem;
+        border-radius: 3rem;
+        font-size: 2rem;
+    }
+
+    .player-card {
+        width: calc(70% - 1rem); /* Adjust card width to fill the container */
+        margin-bottom: 1rem; /* Add margin between cards */
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+
+    .player-description {
+        font-size: 0.875rem;
+        color: white;
+    }
+    .player-category {
+        font-size: 1rem;
+        color: white;
+    }
+
+    .player-title {
+        font-size: 1.25rem;
+        font-weight: bold;
+        color: white;
+    }
+
+    .player-card-medium,
+    .player-card-small {
+        display: none; /* Hide other cards */
+    }
+
+    /* Show one specific card */
+    #card2 {
+        display: block;
+    }
+
+    .arrow-button-container-left,
+    .arrow-button-container-right {
+        display: none; /* Hide arrow buttons in mobile view */
+    }
+}
+
+    .container {
+        padding: 0 10px; /* Adjust container padding */
+    }
+
+    .service {
+        flex-basis: calc(50% - 16px); /* Adjust service width */
+    }
+
+    .info {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center items */
+    }
+
+    .standings, .events {
+        margin: 16px 0; /* Adjust margin */
+    }
+
+    .principles-content {
+        margin-right: 0; /* Remove right margin */
+    }
+
+    .excellence-content {
+        margin-left: 0; /* Remove left margin */
+    }
+
+
+    .match-widget {
+        width: 90%; /* Adjust width to fit mobile screen */
+        padding: 16px; /* Add padding */
+    }
+
+    .match-card {
+        flex-direction: column; /* Stack match info vertically */
+        gap: 12px; /* Add gap between elements */
+    }
+
+    .match-teams {
+        flex-direction: column; /* Stack teams vertically */
+        align-items: center; /* Center items */
+    }
+
+    .team-logo {
+        margin-bottom: 4px; /* Adjust margin */
+    }
+
+    .vs {
+        margin: 8px 0; /* Adjust margin */
+    }
+
+    .match-date {
+        text-align: center; /* Center date */
+    }
+    .vahe {
+        height: auto; /* Allow height to adjust based on content */
+        margin-top: 0; /* Remove top margin */
+        padding: 0px; /* Add padding */
+    }
+
+    .vahe img {
+        margin-top: 0; /* Remove top margin */
+    }
+
+
+

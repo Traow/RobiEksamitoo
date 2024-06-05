@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>STREAMING SQUAD</title>
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="navbar-menu">
+          <li><a href="index.html" class="navbar-link">Home</a></li>
+          <li><a href="shop.html" class="navbar-link">Shop</a></li>
+          <li><a href="contact.html" class="navbar-link">Contact</a></li>
+        </ul>
+        <div class="navbar-logo">
+          <img src="Photos/Small_logo.webp" alt="Logo" class="navbar-logo-img">
+        </div>
+        <div class="navbar-controls">
+          <button class="navbar-icon-button"><a href="https://www.youtube.com/"><img src="https://img.icons8.com/?size=100&id=37326&format=png&color=FFFFFF" alt="Search Icon" class="navbar-icon"></a></button>
+          <button class="navbar-icon-button"><a href="https://www.twitch.tv/"><img src="https://img.icons8.com/?size=100&id=18104&format=png&color=FFFFFF" alt="Search Icon" class="navbar-icon"></a></button>
+          <button class="navbar-icon-button"><a href="https://x.com/home"><img src="https://img.icons8.com/?size=100&id=A4DsujzAX4rw&format=png&color=FFFFFF" alt="Menu Icon" class="navbar-icon"></a></button>
+        </div>
+      </nav>     
+       
+        <div class="widget">
+            <img src="Photos/Hero1.webp">
+        </div>
+        
+        <div class="players-widget-container">
+            <div class="player-card player-card-small" id="card1">
+              <img src="Photos/Untitled(3).webp" alt="Jamal" class="player-image">
+              <div class="player-rating">7/9</div>
+              <div class="player-gradient-overlay">
+                <h3 class="player-title">Jamal</h3>
+                <p class="player-category">LANE: MID</p>
+                <p class="player-description">I like to play mid because its fun and challenging.</p>
+                
+              </div>
+              <div class="arrow-button-container-left">
+                <button class="arrow-button" id="prevButton">
+                  <p>&lt;</p>
+                </button>
+              </div>
+            </div>
+              
+            <div class="player-card player-card-medium" id="card2">
+              <img src="Photos/Untitled(4).webp" alt="James" class="player-image">
+              <div class="player-rating">8/9</div>
+              <div class="player-gradient-overlay">
+                <h3 class="player-title">James</h3>
+                <p class="player-category">LANE: TOP</p>
+                <p class="player-description">Top is like chess, if you have brains you have gains.</p>
+                
+              </div>
+            </div>
+          
+            <div class="player-card player-card-small" id="card3">
+              <img src="Photos/Untitled(5).webp" alt="Oscar" class="player-image">
+              <div class="player-rating">9/9</div>
+              <div class="player-gradient-overlay">
+                <h3 class="player-title">Oscar</h3>
+                <p class="player-category">LANE: JG</p>
+                <p class="player-description">JG DIFF JG DIFF, but not with me.</p>
+                
+              </div>
+              <div class="arrow-button-container-right">
+                <button class="arrow-button" id="nextButton">
+                  <p>&gt;</p>
+                </button>
+              </div>
+            </div>
+            <div class="modal-container" id="modalContainer">
+                <div class="modal-content" id="modalContent">
+                  <span class="close" id="modalClose">&times;</span>
+                  <h2 class="modal-title" id="modalTitle"></h2>
+                  <p class="modal-description" id="modalDescription"></p>
+                </div>
+              </div>
+        </div>
+          
+        <div class="vahe">
+          <img src="Photos/Vahe.webp">
+        </div>
+        
+        <div class="match-widget">
+          <h1 class="title-main">OUR TIMELINE</h1>
+          <div class="buttons-container">
+          </div>
+          <div class="matches-container">
+              
+              <div class="match-card">
+                  <div>
+                      <div class="match-info">
+                          <span class="tag">2 TEAMS</span>
+                          <span class="tag">RECENT</span>
+                      </div>
+                      <h3 class="match-title">ULTRALIGA SPRING Playoffs 2024</h3>
+                      <p class="match-date">26TH MAY 2024, 11:00 PM</p>
+                  </div>
+                  <div class="match-teams">
+                      <div class="team">
+                          <img src="Photos/Small_logo.webp" alt="Streaming Squad" class="team-logo">
+                          <p>SS</p>
+                      </div>
+                      <span class="vs">VS</span>
+                      <div class="team">
+                          <img src="Photos/g2_small.webp" alt="G2" class="team-logo">
+                          <p>G2</p>
+                      </div>
+                  </div>
+              </div>
+              
+              <div class="match-card">
+                  <div>
+                      <div class="match-info">
+                          <span class="tag">BONUS REWARDS</span>
+                          <span class="tag">NEXT GAME</span>
+                      </div>
+                      <h3 class="match-title">ULTRALIGA SPRING Playoffs 2024</h3>
+                      <p class="match-date">9TH JUNE 2024, 13:00 PM</p>
+                  </div>
+                  <div class="match-teams">
+                      <div class="team">
+                          <img src="Photos/Small_logo.webp" alt="Streaming Squad" class="team-logo">
+                          <p>SS</p>
+                      </div>
+                      <span class="vs red">VS</span>
+                      <div class="team">
+                          <img src="Photos/t1_small.webp" alt="T1" class="team-logo">
+                          <p>T1</p>
+                      </div>
+                  </div>
+              </div>
+              
+              <div class="match-card">
+                  <div>
+                      <div class="match-info">
+                          <span class="tag">2 TEAMS</span>
+                          <span class="tag">UPCOMING MATCH</span>
+                      </div>
+                      <h3 class="match-title">ULTRALIGA SPRING Playoffs 2024</h3>
+                      <p class="match-date">15TH JUNE 2024, 11:00 PM</p>
+                  </div>
+                  <div class="match-teams">
+                      <div class="team">
+                          <img src="Photos/Small_logo.webp" alt="Streaming Squad" class="team-logo">
+                          <p>SS</p>
+                      </div>
+                      <span class="vs">VS</span>
+                      <div class="team">
+                          <img src="Photos/Cloud9_small.webp" alt="Cloud9" class="team-logo">
+                          <p>Cloud9</p>
+                      </div>
+                  </div>
+              </div>
+              
+              <div class="match-card">
+                  <div>
+                      <div class="match-info">
+                          <span class="tag">BONUS REWARDS</span>
+                          <span class="tag">40+ POINTS</span>
+                          <span class="tag">UPCOMING MATCH</span>
+                      </div>
+                      <h3 class="match-title">ULTRALIGA SPRING Playoffs 2024</h3>
+                      <p class="match-date">21TH JUNE 2024, 9:00 PM</p>
+                  </div>
+                  <div class="match-teams">
+                      <div class="team">
+                          <img src="Photos/Small_logo.webp" alt="Streaming Squad" class="team-logo">
+                          <p>SS</p>
+                      </div>
+                      <span class="vs">VS</span>
+                      <div class="team">
+                          <img src="Photos/100_Thieves_logo_small.webp" alt="100Thieves" class="team-logo">
+                          <p>100t</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+          
+            
+            
+        
+        
+      <footer class="footer bg-zinc-900 text-white py-8 px-4 md:px-8">
+        <div class="footer-content max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between">
+          <div class="footer-company mb-4 md:mb-0">
+            <h2 class="footer-title text-lg font-bold">Streaming Squad</h2>
+            <p class="footer-address text-sm">123 Street Name, City, Country</p>
+          </div>
+          <div class="footer-links flex space-x-4">
+            <button class="navbar-icon-button"><a href="https://www.youtube.com/"><img src="https://img.icons8.com/?size=100&id=37326&format=png&color=FFFFFF" alt="Search Icon" class="navbar-icon"></a></button>
+            <button class="navbar-icon-button"><a href="https://www.twitch.tv/"><img src="https://img.icons8.com/?size=100&id=18104&format=png&color=FFFFFF" alt="Search Icon" class="navbar-icon"></a></button>
+          <button class="navbar-icon-button"><a href="https://x.com/home"><img src="https://img.icons8.com/?size=100&id=A4DsujzAX4rw&format=png&color=FFFFFF" alt="Menu Icon" class="navbar-icon"></a></button>
+          </div>
+        </div>
+      </footer>
+      
+    
+    <script src="script.js"></script>
+</body>
+</html>
